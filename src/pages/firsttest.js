@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 //import { ContextExclusionPlugin } from "webpack";
 console.log(process.env.NODE_ENV);
+console.log(process.env.API_RELOCATION);
 /*if (process.env.NODE_ENV === 'development') {
   require('dotenv').config({
     path: `.env.development`,
@@ -8,7 +9,7 @@ console.log(process.env.NODE_ENV);
 }*/
 
 export default function Firsttest() {
-  const [countryCode, setCountryCode] = useState(0)
+ /* const [countryCode, setCountryCode] = useState(0)
   useEffect(() => {
     fetch(`${process.env.API_RELOCATION}`)
       .then(response => response.json()) // parse JSON from request
@@ -29,5 +30,5 @@ export default function Firsttest() {
   }else{
     window.location = '/corporate';
   }
-  return null 
+  return null */
 }

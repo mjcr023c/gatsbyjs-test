@@ -11,19 +11,17 @@ export default function Home() {
       })
   }, [])
   console.log("Country",countryCode);
-  console.log(countryCode=== 'CL');
+  console.log(countryCode === 'CL');
+  console.log(countryCode === 'CO');
+  console.log(countryCode === 'PE');
   if(countryCode === 'CL') {
     window.location = '/chile';
-    //window.location = 'https://www.mallplaza.com/cl';
   }else if(countryCode === 'CO') {
     window.location = '/colombia';
-      //window.location = 'https://www.mallplaza.com/co';
   }else if(countryCode === 'PE') {
     window.location = '/peru';
-    //window.location = 'https://www.mallplaza.com/pe';  
   }else{
-    //window.location = 'https://corporativo.mallplaza.com';
-    window.location = '/chile';
+    window.location = '/corporate';
   }
   return null 
 }
